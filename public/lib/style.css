@@ -1,0 +1,49 @@
+body.bodyClass {
+    background-color:#FFF3D9;
+}
+
+.container {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.row_films {
+    padding-top: 5%;
+}
+
+.btn-light, .btn-light:active, .btn-light:visited  {
+    background-color: #3B0918 !important;
+    color: white !important;
+}
+
+.btn-light:hover{
+    background-color: #956352 !important;
+}
+
+.btn-warning, .btn-warning:active, .btn-warning:visited  {
+    background-color: #ffcd60 !important;
+}
+
+.btn-warning:hover{
+    background-color: #f8dda1 !important;
+}
+
+.btn-secondary, .btn-secondary:active, .btn-secondary:visited  {
+    background-color: #FFF3D9 !important;
+}
+
+.btn-secondary:hover {
+    background-color: #f8dda1 !important;
+}
+
+.seeMore {
+    padding-top: 2%;
+}
+
+#seeMoreA{
+    color: black;
+}
+
+.card {
+    margin-bottom: 15px;
+}

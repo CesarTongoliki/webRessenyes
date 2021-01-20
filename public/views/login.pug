@@ -1,0 +1,24 @@
+doctype html
+html(lang='en')
+    head
+        style
+           include ../lib/login.css
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        title Login
+        script(src='https://code.jquery.com/jquery-3.4.1.min.js')
+        script(src='../controllers/login.js')
+
+    body.loginClass
+        div.loginbox 
+            img.avatar(src='../images/avatar1.png')
+            h1 INICI DE SESSIÓ
+            <form action="/login" method="post" id="formId">
+                <p>Nom d'usuari</p>
+                <input id="nomUser" type="text" name="name" placeholder="Afegeix el nom" maxlength="12" autocomplete="off">
+                <p>Contrasenya</p>
+                <input id="passwordUser" type="password" name="password" placeholder="Afegeix la password" autocomplete="off">
+                <h1 id="noExisteix">Dades incorrectes</h1>
+                <input class="newUser" type="submit" value="Inicia sessió">
+                <a href="/register"> No tens compte? Crea-te'l! </a>
+            </form> 
+

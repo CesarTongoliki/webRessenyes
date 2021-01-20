@@ -1,0 +1,55 @@
+extends layout.pug
+
+block estil
+    style
+        include ../lib/afegirRessenya.css
+
+block scripts
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>		
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    script(src='../../controllers/afegirRessenyaController.js')
+    script.
+        nomFilm="#{nomFilm}";
+        username="#{username}";
+
+append content
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col"></div>
+            <div class="col col-9 text-center">
+                <h2 id="titol">Ressenya sobre #{nomFilm}</h2>
+            </div>
+            <div class="col"></div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col"></div>
+            <div class="col col-9 text-center">
+                <form>
+                    <div class="formRes form-group">
+                        <textarea type="text" class="form-control input-lg" id="textRes" placeholder="Text de la ressenya"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <div class="slide row">
+                            <div class="col-2">
+                                <h5>Valoració: </h5>
+                            </div>
+                            <div class="col">
+                                <div class="slidecontainer">
+                                    <input type="range" min="0" max="1000" value="500" class="slider" id="myRange">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <h5><span id="demo"></span></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submit">
+                        <button id="newRessenya" type="button" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>

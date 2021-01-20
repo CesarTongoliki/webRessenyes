@@ -1,0 +1,27 @@
+doctype html
+html(lang='en')
+    head
+        style
+            include ../lib/login.css
+        title Register
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        script(src='https://code.jquery.com/jquery-3.4.1.min.js')
+        script(src='../controllers/register.js')
+    body.registerClass
+        div.loginbox#registerBox
+            img.avatar(src='../images/avatar1.png')
+            h1 REGISTRE
+            form#formId
+                p Nom d'usuari
+                input#nomUser(type="text" name="name" placeholder="Afegeix el nom" maxlength="12" autocomplete="off")
+                p Contrasenya
+                input#passwordUser(type="password" name="password" maxlength="20" placeholder="Afegeix la contrasenya")
+                p Correu Electrònic
+                input#emailUser(type="text" name="email" autocomplete="off" placeholder="Afegeix el correu" maxlength="30")
+                p Edat
+                input#edatUser(type="number" name="edat" placeholder="Afegeix l'edat" min=0 max=120 autocomplete="off")
+                input.newUser(value="Regístra't")
+                h1#afegitBe Usuari afegit correctament
+                h1#noExisteix L'usuari o l'email ja existeixen
+                h1#emailInvalid El format de l'email és invàlid
+
