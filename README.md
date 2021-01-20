@@ -1,8 +1,8 @@
-# webRessenyes
+# Film review Web
 
 Film review full stack project.
 
-Tech used:
+## Tech used:
 
 Backend:  Server: NodeJS + Express. 
           Database: MongoDB
