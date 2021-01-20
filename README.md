@@ -6,5 +6,5 @@ Film review full stack project.
 
 Backend:  NodeJS + Express && MongoDB
 
-Frontend: HTML && CSS + Bootstrap && JavaScript + JQuery
+Frontend: HTML (.pug) && CSS + Bootstrap && JavaScript + JQuery
   
